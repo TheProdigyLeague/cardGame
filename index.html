@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Card Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="game-container">
+    <div class="player-area player-2-area">
+        <h2>Player 2</h2>
+        <div class="player-stats">
+            Life: <span id="player2-life">20</span>
+            Deck: <span id="player2-deck-count"></span> cards
+        </div>
+        <div class="hand player-2-hand" id="player2-hand-display">
+        </div>
+        <div class="battlefield player-2-battlefield" id="player2-battlefield-display">
+        </div>
+    </div>
+
+    <div class="game-log-area">
+        <h2>Game Log</h2>
+        <div class="game-log" id="game-log">
+        </div>
+        <button id="next-turn-button" class="game-button">Next Turn</button>
+        <button id="start-game-button" class="game-button">Start Game</button>
+    </div>
+
+    <div class="player-area player-1-area">
+        <h2>Player 1</h2>
+        <div class="player-stats">
+            Life: <span id="player1-life">20</span>
+            Deck: <span id="player1-deck-count"></span> cards
+        </div>
+        <div class="battlefield player-1-battlefield" id="player1-battlefield-display">
+        </div>
+        <div class="hand player-1-hand" id="player1-hand-display">
+        </div>
+        <div class="action-area">
+            <button id="play-selected-cards-button" class="game-button" disabled>Summon Champion</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
